@@ -3,8 +3,85 @@
   <head>
     <meta charset="utf-8" />
     <title>kakalakola.github.io</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
   </head>
   <body>
-    Profile Page WIP.
+    <div class="container">
+      <div class="fixed-top">
+        <div class="row">
+          <div class="col-lg-8 push-lg-2">
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
+              <a class="navbar-brand" href="#">Saad Azim</a>
+              <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link" href="#divAbout">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#divPortfolio">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#divContact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 push-lg-2">
+          <div id="divAbout">
+            <div class="row">
+              <div class="col-lg-3 col-md-4">
+                <img class="img-responseive" src="https://orig08.deviantart.net/dcd0/f/2007/064/2/6/self_portrait_by_mendicant.png">
+              </div>
+              <div class="col-lg-9 col-md-8">
+              <strong>Freelance Artist and Graphic Designer</strong>
+              </div>
+            </div>
+          </div>
+          <div id="divPortfolio">
+            <h3>Portfolio</h3>
+            <div class="row">
+              <div class="col-md-4 col-sm-6"><a href="https://mendicant.deviantart.com/art/The-Blue-Beatles-338771581" target="_blank"><img src="https://orig04.deviantart.net/5b28/f/2012/325/1/8/the_blue_beatles_by_mendicant-d5lp1tp.jpg" class="img-thumbnail"/></a></div>
+              <div class="col-md-4 col-sm-6"><a href="https://mendicant.deviantart.com/art/Odin-Does-What-Odin-Does-Best-412703904" target="_blank"><img src="https://img11.deviantart.net/1d2c/i/2013/314/7/a/odin_does_what_odin_does_best_by_mendicant-d6tpodc.jpg" class="img-thumbnail"/></a></div>
+              <div class="col-md-4 col-sm-6"><a href="https://mendicant.deviantart.com/art/Polar-Bear-And-Watermelon-08132013-402746188" target="_blank"><img src="https://orig01.deviantart.net/56ba/f/2013/268/d/6/polar_bear_and_watermelon_08132013_by_mendicant-d6ns8y4.jpg" class="img-thumbnail"/></a></div>
+              <div class="col-md-4 col-sm-6"><a href="https://mendicant.deviantart.com/art/SwirlPool-350901032" target="_blank"><img src="https://orig11.deviantart.net/36b8/f/2013/027/7/7/swirlpool_by_mendicant-d5sx0yw.jpg" class="img-thumbnail"/></a></div>
+              <div class="col-md-4 col-sm-6"><a href="https://mendicant.deviantart.com/art/Phoenix-Force-What-If-Colors-338770414" target="_blank"><img src="https://orig01.deviantart.net/4b54/f/2012/325/2/c/phoenix_force_what_if_colors_by_mendicant-d5lp0xa.jpg" class="img-thumbnail"/></a></div>
+              <div class="col-md-4 col-sm-6"><a href="https://mendicant.deviantart.com/art/Opening-Night-Inked-320579281" target="_blank"><img src="https://orig09.deviantart.net/6105/f/2012/224/8/e/opening_night___inked_by_mendicant-d5av4k1.jpg" class="img-thumbnail"/></a></div>
+            </div>
+          </div>
+          <div id="divContact">
+            <h3>Contact Info</h3>
+            Contact Info with demo form
+            <div class="row">
+              <div class="col-lg-6 push-lg-6">
+                Want to get in touch with me?
+              </div>
+              <div class="col-lg-6 pull-lg-6">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="inputPhone" aria-describedby="emailHelp" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="inputMessage" aria-describedby="emailHelp" placeholder="Your Message" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-outline-primary">Send</button>
+            <div class="small faded"><caption>(Since this is a demo, the button doesn't actually work.)<caption></div>
+          </div>
+          <div>
+            <footer class="bg-faded">
+              &#169; 2017 Saad Azim. Coded with <a href="https://notepad-plus-plus.org/"><img id="iconNpp" width="auto" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Notepad_plus_plus.png"></a> All rights reserved.
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

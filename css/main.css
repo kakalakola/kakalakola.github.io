@@ -1,0 +1,74 @@
+/*Modifications to standard HTML tags*/
+
+html{border:0;margin:0;padding:0;}
+body{font-family:Arial,"Helvetica Neue",Helvatica,sans-serif;color:#222;margin-top:36px;padding:0;max-width:800px;margin-left:auto;margin-right:auto;}
+p{border:0;margin:0;padding-top:0.4rem;}
+a{text-decoration:none;}
+a:hover{color:#26c;}
+a:link{color:#26c;}
+a:visited{color:#26c;}*/
+a{color:#26c;}
+ul{margin:0;padding:0;}
+h2,.fauxH4,.fauxH5{margin:0;padding:0;display:block;}
+/*h5{font-weight:200;display:inline-block;text-align:right;}*/
+hr{border:1px solid #ddd;}
+
+#code div p,#art div p{border:0;margin:0;padding:0;}
+.fauxH5{font-size:0.8em;font-weight:200;display:inline-block;}
+/*Change theme (I hope)*/
+/*input[type="checkbox"]:checked{background-color:#0f0;}*/
+/*label::before{color:#f00;}
+label iput:checked{color:#0f0;}
+input:checked ~ * #code div{color:#0f0;}
+*/
+
+/*input:checked + label{content:"Light Theme";color:#0ff;}
+label::after{content:"☀️";color:#666;}
+input:checked ~ label::after{content:"🌙";color:#666;}
+
+input:checked ~ .cd{color:#00f;}
+*/
+
+/*Modifications to ID and/or ID+tag combo*/
+#navMenu{background-color:#fff;position:fixed;top:0;z-index:9001;padding:8px 4px;width:100%}
+#navMenu li{display:inline;}
+#navMenu li+li:before{content:"|";padding:0 4px 0 1px;color:#ddd;}
+#navMenu ul{display:inline;}
+label{position:relative;right:0;}
+
+/*
+#code div{display:inline-block;width:30%;vertical-align:top;height:100%;}
+#code div a{font-weight:600;}
+*/
+#code {display:table;border-spacing:0.25rem;width:100%;}
+#code div {display:table-cell;width:30%;}
+#code div p span{padding-bottom:0.4rem;}
+/*#code div p{line-height:1rem;}*/
+
+#art div {display:inline-block;overflow:hidden;width:160px;height:300px;}
+#art img{display:block;border-radius:0.4rem;}
+
+#footer{font-size:0.75rem;margin-top:8px;}
+
+/*Text placement over thumbnails*/
+/*I can use pixel values, because the thumbnail div size is defined in pixel values ^_^*/
+.fauxH4{
+  position:absolute;background-color:rgba(255,255,255,0.9);width:148px;
+  margin:240px 0 0 4px;padding:0.25rem;border-radius:0.5rem 0 0 0;text-align:right;
+}
+
+/*Fancy stuff*/
+#code div,#art div{border-radius:4px;padding:4px;background-color:#fff;}
+/*#code div,#art div{filter:drop-shadow(4px 4px 4px #ccc);}*/
+#code a,#art a{font-size:0.9rem;font-family:"Arial Black",Gadget,sans-serif;}
+
+/*Debugging/testing stuff
+#code div{border:dashed 1px;border-color:#aaa;}
+#art div{border:dashed 1px;border-color:#aaa;}
+*/
+@media(max-width:768px){
+  body{width:100%;}
+  #code,#code div{display:block;width:auto;border-spacing:0.25rem;}
+  #code div{max-width:24em;}
+}
+
